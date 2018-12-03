@@ -1,7 +1,7 @@
 # Project configuration
 NAME=ft-partner-include-category-list
 SRC_DIR=
-VERSION=1.0.6
+VERSION=1.0.7
 LOCAL_PORT=3528
 GITHUB_USER=filethis
 GITHUB_USER_ABBREV=ft-partner-include-category-list
