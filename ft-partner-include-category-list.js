@@ -1,4 +1,4 @@
-<!--
+/*
 Copyright 2018 FileThis, Inc.
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,24 +12,27 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
--->
-
-
-<link rel="import" href="../iron-flex-layout/iron-flex-layout-classes.html">
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../shadycss/apply-shim.html">
-
-<!--
+*/
+/**
 `<ft-partner-include-category-list>`
 
 A list of categories to include for partner.
 
 @demo
--->
-<dom-module id="ft-partner-include-category-list">
+*/
+/*
+  FIXME(polymer-modulizer): the above comments were extracted
+  from HTML and may be out of place here. Review them and
+  then delete this comment!
+*/
+import '@polymer/iron-flex-layout/iron-flex-layout-classes.js';
 
-    <template>
-
+import '@polymer/polymer/polymer-legacy.js';
+import '@webcomponents/shadycss/entrypoints/apply-shim.js';
+import { Polymer } from '@polymer/polymer/lib/legacy/polymer-fn.js';
+import { html } from '@polymer/polymer/lib/utils/html-tag.js';
+Polymer({
+  _template: html`
         <style include="iron-flex iron-flex-alignment iron-positioning"></style>
 
         <style>
@@ -43,17 +46,10 @@ A list of categories to include for partner.
         <div>
             ft-partner-include-category-list
         </div>
+`,
 
-    </template>
+  is: 'ft-partner-include-category-list',
 
-    <script>
-        Polymer({
-
-            is: 'ft-partner-include-category-list',
-
-            properties: {
-            }
-
-        });
-    </script>
-</dom-module>
+  properties: {
+  }
+});
